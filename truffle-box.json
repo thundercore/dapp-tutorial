@@ -1,0 +1,11 @@
+{
+  "ignore": [],
+  "commands": {
+    "Compile contracts": "truffle compile",
+    "Migrate contracts": "truffle migrate",
+    "Test contracts": "truffle test"
+  },
+  "hooks": {
+    "post-unpack": "npm install && truffle compile && ln -rs build/contracts client/src/contracts && cd client && npm install"
+  }
+}
