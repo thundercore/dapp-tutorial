@@ -6,6 +6,6 @@
     "Test contracts": "truffle test"
   },
   "hooks": {
-    "post-unpack": "npm install && truffle compile && ln -s build/contracts client/src/contracts && cd client && npm install"
+    "post-unpack": "npm install && truffle compile && cd client/src && ln -s ../../build/contracts contracts && cd .. && npm install"
   }
 }
