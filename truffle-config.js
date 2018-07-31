@@ -11,7 +11,7 @@ module.exports = {
       network_id: "*" // Match any network id
     },
     thunder: {
-      provider: () => new HDWalletProvider(mnemonic, "http://testnet-rpc.thundercore.com:8545"),
+      provider: () => new HDWalletProvider(mnemonic, "https://testnet-rpc.thundercore.com:8544"),
       network_id: "*",
       gas: 3000000,
       gasPrice: 50000000000
